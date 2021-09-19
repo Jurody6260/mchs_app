@@ -2,6 +2,8 @@
   "@@locale": "ru",
   "helloWorld": "Привет!",
   "applicationTitle" : "приложение MCHS",
+  "settings" : "Настройки",
+  "choose_Lan" : "Выбрать язык",
   "first_first":"Действия до землетрясения",
   "first_second":"Действия во время землетрясения",
   "first_third":"Действия после землетрясения"

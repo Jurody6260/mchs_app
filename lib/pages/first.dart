@@ -107,6 +107,31 @@ class FirstPage extends StatelessWidget {
                     ],
                   ),
                 )),
+            Card(
+                color: Colors.amber[700],
+                child: InkWell(
+                  onTap: () {
+                    Navigator.pushNamed(context, '/settings');
+                  },
+                  child: Column(
+                    children: [
+                      SizedBox(
+                        height: sizeh / 2,
+                      ),
+                      SizedBox(
+                        width: sizew,
+                        height: sizeh,
+                        child: Text(
+                          AppLocalizations.of(context)!.settings,
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontSize: 25,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                )),
           ],
         ),
       ),

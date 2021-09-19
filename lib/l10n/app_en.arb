@@ -6,6 +6,8 @@
     "description": "The conventional newborn programmer greeting"
   },
   "applicationTitle" : "MCHS APP",
+  "settings" : "Settings",
+  "choose_Lan" : "Choose Language",
   "first_first":"Actions before earthquake",
   "first_second":"Actions at the time earthquake",
   "first_third":"Actions after earthquake"

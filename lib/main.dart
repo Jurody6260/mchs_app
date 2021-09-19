@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'pages/first.dart';
 import 'pages/second.dart';
+import 'pages/settings.dart';
 
 void main() => runApp(
       MaterialApp(
@@ -14,5 +15,6 @@ void main() => runApp(
           routes: {
             '/': (context) => FirstPage(),
             '/second': (context) => SecondPage(),
+            '/settings': (context) => Settings()
           }),
     );
