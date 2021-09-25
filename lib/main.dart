@@ -3,6 +3,7 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'pages/first.dart';
 import 'pages/second.dart';
 import 'pages/settings.dart';
+import 'pages/third_first.dart';
 
 void main() => runApp(
       MaterialApp(
@@ -14,7 +15,8 @@ void main() => runApp(
           initialRoute: '/',
           routes: {
             '/': (context) => FirstPage(),
-            '/second': (context) => SecondPage(),
-            '/settings': (context) => Settings()
+            '/second': (context) => SecondFirst(),
+            '/settings': (context) => Settings(),
+            '/third': (context) => ThirdFirst(),
           }),
     );

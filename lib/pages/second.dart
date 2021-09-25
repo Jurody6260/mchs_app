@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
-class SecondPage extends StatelessWidget {
-  const SecondPage({Key? key}) : super(key: key);
+class SecondFirst extends StatelessWidget {
+  const SecondFirst({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    double sizew = 500;
-    double sizeh = 100;
+    double sizeh = 200;
+    double sizefs = 25;
     return Scaffold(
       appBar: AppBar(
         title: Row(
@@ -22,78 +23,111 @@ class SecondPage extends StatelessWidget {
         ),
         centerTitle: true,
       ),
-      body: Center(
+      body: SingleChildScrollView(
         child: Column(
           children: [
-            Card(
-                color: Colors.amber,
-                child: InkWell(
-                  onTap: () {},
-                  child: Column(
-                    children: [
-                      SizedBox(
-                        height: sizeh / 2 + 25,
+            Container(
+              height: sizeh,
+              child: InkWell(
+                onTap: () {},
+                child: Card(
+                  child: Center(
+                    child: Text(
+                      AppLocalizations.of(context)!.second_one,
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: sizefs,
                       ),
-                      SizedBox(
-                        width: sizew,
-                        height: sizeh,
-                        child: Text(
-                          "ТАЪЛИМ МУАССАСАЛАРИ УЧУН",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontSize: 25,
-                          ),
-                        ),
-                      ),
-                    ],
+                    ),
                   ),
-                )),
-            Card(
-                color: Colors.amber,
-                child: InkWell(
-                  onTap: () {},
-                  child: Column(
-                    children: [
-                      SizedBox(
-                        height: sizeh / 3,
+                ),
+              ),
+            ),
+            Container(
+              height: sizeh,
+              child: InkWell(
+                onTap: () {},
+                child: Card(
+                  child: Center(
+                    child: Text(
+                      AppLocalizations.of(context)!.second_two,
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: sizefs,
                       ),
-                      SizedBox(
-                        width: sizew,
-                        height: sizeh,
-                        child: Text(
-                          "ДАВОЛАШ-СОГЛОМЛАШТИРИШ МУАССАСАЛАРИ УЧУН",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontSize: 25,
-                          ),
-                        ),
-                      ),
-                    ],
+                    ),
                   ),
-                )),
-            Card(
-                color: Colors.amber,
-                child: InkWell(
-                  onTap: () {},
-                  child: Column(
-                    children: [
-                      SizedBox(
-                        height: sizeh / sizeh,
+                ),
+              ),
+            ),
+            Container(
+              height: sizeh,
+              child: InkWell(
+                onTap: () {},
+                child: Card(
+                  child: Center(
+                    child: Text(
+                      AppLocalizations.of(context)!.second_three,
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: sizefs,
                       ),
-                      SizedBox(
-                        width: sizew,
-                        height: sizeh,
-                        child: Text(
-                          "ХОКИМИЯТ, ВАЗИРЛИК, КОРХОНА, ИДОРА ВА ТАШКИЛОТ УЧУН",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontSize: 25,
-                          ),
-                        ),
-                      ),
-                    ],
+                    ),
                   ),
-                )),
+                ),
+              ),
+            ),
+            Container(
+              height: sizeh,
+              child: InkWell(
+                onTap: () {},
+                child: Card(
+                  child: Center(
+                    child: Text(
+                      AppLocalizations.of(context)!.second_four,
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: sizefs,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            Container(
+              height: sizeh,
+              child: InkWell(
+                onTap: () {},
+                child: Card(
+                  child: Center(
+                    child: Text(
+                      AppLocalizations.of(context)!.second_five,
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: sizefs,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            Container(
+              height: sizeh,
+              child: InkWell(
+                onTap: () {},
+                child: Card(
+                  child: Center(
+                    child: Text(
+                      AppLocalizations.of(context)!.second_six,
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: sizefs,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ),

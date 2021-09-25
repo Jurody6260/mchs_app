@@ -10,5 +10,11 @@
   "choose_Lan" : "Choose Language",
   "first_first":"Actions before earthquake",
   "first_second":"Actions at the time earthquake",
-  "first_third":"Actions after earthquake"
+  "first_third":"Actions after earthquake",
+  "second_one":"Production and service population engaged in industries",
+  "second_two":"Production and service population not engaged in industries",
+  "second_three":"Preschool general secondary special professional and higher education students in institutions",
+  "second_four":"General seismic zoning map",
+  "second_five":"A strong earthquake is a natural disaster causes of origin",
+  "second_six":"Civil earthquake level of preparation tests for evaluation"
 }

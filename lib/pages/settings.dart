@@ -6,6 +6,7 @@ class Settings extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double boxheight = 50;
     return Scaffold(
         appBar: AppBar(
           title: Row(
@@ -34,7 +35,22 @@ class Settings extends StatelessWidget {
                     children: [
                       ElevatedButton(
                           onPressed: () {},
-                          child: Text(AppLocalizations.of(context)!.choose_Lan))
+                          child: Column(
+                            children: [
+                              SizedBox(
+                                height: boxheight,
+                              ),
+                              Text(
+                                AppLocalizations.of(context)!.choose_Lan,
+                                style: TextStyle(
+                                  fontSize: 25,
+                                ),
+                              ),
+                              SizedBox(
+                                height: boxheight,
+                              )
+                            ],
+                          ))
                     ],
                   ),
                 ),
