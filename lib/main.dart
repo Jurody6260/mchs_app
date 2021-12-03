@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'pages/first.dart';
+import 'pages/lang_select.dart';
 import 'pages/second.dart';
 import 'pages/settings.dart';
 import 'pages/third_first.dart';
@@ -18,5 +19,6 @@ void main() => runApp(
             '/second': (context) => SecondFirst(),
             '/settings': (context) => Settings(),
             '/third': (context) => ThirdFirst(),
+            '/LangSelect': (context) => LangSelect(),
           }),
     );

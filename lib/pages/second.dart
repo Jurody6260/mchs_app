@@ -29,8 +29,11 @@ class SecondFirst extends StatelessWidget {
             Container(
               height: sizeh,
               child: InkWell(
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, '/third');
+                },
                 child: Card(
+                  color: Colors.amberAccent,
                   child: Center(
                     child: Text(
                       AppLocalizations.of(context)!.second_one,
@@ -46,8 +49,11 @@ class SecondFirst extends StatelessWidget {
             Container(
               height: sizeh,
               child: InkWell(
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, '/third');
+                },
                 child: Card(
+                  color: Colors.amberAccent,
                   child: Center(
                     child: Text(
                       AppLocalizations.of(context)!.second_two,
@@ -63,8 +69,11 @@ class SecondFirst extends StatelessWidget {
             Container(
               height: sizeh,
               child: InkWell(
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, '/third');
+                },
                 child: Card(
+                  color: Colors.amberAccent,
                   child: Center(
                     child: Text(
                       AppLocalizations.of(context)!.second_three,
@@ -80,8 +89,11 @@ class SecondFirst extends StatelessWidget {
             Container(
               height: sizeh,
               child: InkWell(
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, '/third');
+                },
                 child: Card(
+                  color: Colors.amberAccent,
                   child: Center(
                     child: Text(
                       AppLocalizations.of(context)!.second_four,
@@ -97,8 +109,11 @@ class SecondFirst extends StatelessWidget {
             Container(
               height: sizeh,
               child: InkWell(
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, '/third');
+                },
                 child: Card(
+                  color: Colors.amberAccent,
                   child: Center(
                     child: Text(
                       AppLocalizations.of(context)!.second_five,
@@ -114,8 +129,11 @@ class SecondFirst extends StatelessWidget {
             Container(
               height: sizeh,
               child: InkWell(
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, '/third');
+                },
                 child: Card(
+                  color: Colors.amberAccent,
                   child: Center(
                     child: Text(
                       AppLocalizations.of(context)!.second_six,

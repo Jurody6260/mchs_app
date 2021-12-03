@@ -7,7 +7,7 @@ class FirstPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double sizew = 500;
-    double sizeh = 100;
+    double sizeh = 80;
     return Scaffold(
       appBar: AppBar(
         title: Row(

@@ -28,13 +28,17 @@ class Settings extends StatelessWidget {
               Card(
                 color: Colors.amber,
                 child: InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.pushNamed(context, '/LangSelect');
+                  },
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
                       ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.pushNamed(context, '/LangSelect');
+                          },
                           child: Column(
                             children: [
                               SizedBox(
