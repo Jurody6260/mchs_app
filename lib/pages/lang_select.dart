@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:provider/provider.dart';
 import 'package:final_mchs_/provider.dart';
+
+import '../main.dart';
 
 class LangSelect extends StatelessWidget {
   const LangSelect({Key? key}) : super(key: key);
@@ -36,11 +37,12 @@ class LangSelect extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
                       ElevatedButton(
-                          onPressed: () {
-                            final provider = Provider.of<LocaleProvider>(
-                                context,
-                                listen: false);
-                            provider.setLocale(Locale('uz'));
+                          onPressed: () async {
+                            // var box = await Hive.openBox<dynamic>('myBox');
+                            // box.put('local', 'uz');
+                            // box.close();
+                            MyApp.of(context)!.setLocale(
+                                Locale.fromSubtags(languageCode: 'uz'));
                             Navigator.pop(context);
                             Navigator.pop(context);
                           },
@@ -79,11 +81,12 @@ class LangSelect extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
                       ElevatedButton(
-                          onPressed: () {
-                            final provider = Provider.of<LocaleProvider>(
-                                context,
-                                listen: false);
-                            provider.setLocale(Locale('ru'));
+                          onPressed: () async {
+                            // var box = await Hive.openBox<dynamic>('myBox');
+                            // box.put('local', 'ru');
+                            // box.close();
+                            MyApp.of(context)!.setLocale(
+                                Locale.fromSubtags(languageCode: 'ru'));
                             Navigator.pop(context);
                             Navigator.pop(context);
                           },
@@ -117,12 +120,16 @@ class LangSelect extends StatelessWidget {
                     children: [
                       ElevatedButton(
                           onPressed: () {
-                            final provider = Provider.of<LocaleProvider>(
-                                context,
-                                listen: false);
-                            provider.setLocale(Locale('en'));
+                            MyApp.of(context)!.setLocale(
+                                Locale.fromSubtags(languageCode: 'en'));
                             Navigator.pop(context);
                             Navigator.pop(context);
+                            // final provider = Provider.of<LocaleProvider>(
+                            //     context,
+                            //     listen: false);
+                            // provider.setLocale(Locale('en'));
+                            // Navigator.pop(context);
+                            // Navigator.pop(context);
                           },
                           child: Column(
                             children: [
