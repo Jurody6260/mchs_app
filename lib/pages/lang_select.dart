@@ -42,7 +42,7 @@ class LangSelect extends StatelessWidget {
                             // box.put('local', 'uz');
                             // box.close();
                             MyApp.of(context)!.setLocale(
-                                Locale.fromSubtags(languageCode: 'uz'));
+                                Locale.fromSubtags(languageCode: 'uz'), 'uz');
                             Navigator.pop(context);
                             Navigator.pop(context);
                           },
@@ -86,7 +86,7 @@ class LangSelect extends StatelessWidget {
                             // box.put('local', 'ru');
                             // box.close();
                             MyApp.of(context)!.setLocale(
-                                Locale.fromSubtags(languageCode: 'ru'));
+                                Locale.fromSubtags(languageCode: 'ru'),'ru');
                             Navigator.pop(context);
                             Navigator.pop(context);
                           },
@@ -121,7 +121,7 @@ class LangSelect extends StatelessWidget {
                       ElevatedButton(
                           onPressed: () {
                             MyApp.of(context)!.setLocale(
-                                Locale.fromSubtags(languageCode: 'en'));
+                                Locale.fromSubtags(languageCode: 'en'),'en');
                             Navigator.pop(context);
                             Navigator.pop(context);
                             // final provider = Provider.of<LocaleProvider>(

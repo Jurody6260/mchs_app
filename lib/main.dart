@@ -19,6 +19,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   Locale? _locale;
+  String? _localef;
 
   @override
   Widget build(BuildContext context) {
@@ -35,10 +36,16 @@ class _MyAppState extends State<MyApp> {
 // При первом входе локаль будет иметь язык системы
     Future<void> trueLocale() async {
       var box = await Hive.openBox<dynamic>('myBox');
-      _locale = await box.get('local', defaultValue: _locale);
+      _localef = await box.get('local');
       box.close();
+      if (_localef != null) {
+        _locale = Locale(_localef!, '');
+      } else {
+        _locale = _localef as Locale?;
+      }
     }
 
+    trueLocale();
     if (_locale == null) {
       return MaterialApp(
           debugShowCheckedModeBanner: false,
@@ -73,15 +80,23 @@ class _MyAppState extends State<MyApp> {
     }
   }
 
-  void setLocale(Locale value) {
+  void futureBox(code) async {
+    var box = await Hive.openBox<dynamic>('myBox');
+    await box.put('local', code);
+    box.close();
+  }
+
+  void setLocale(Locale value, String code) {
     setState(() {
       _locale = value;
+      futureBox(code);
     });
   }
 }
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  // Hive.registerAdapter(LocaleAdapter());
   await Hive.initFlutter();
   return runApp(MyApp());
 }
