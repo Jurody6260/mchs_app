@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
-class SecondFirst extends StatelessWidget {
-  const SecondFirst({Key? key}) : super(key: key);
+class Before extends StatelessWidget {
+  const Before({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +30,7 @@ class SecondFirst extends StatelessWidget {
               height: sizeh,
               child: InkWell(
                 onTap: () {
-                  Navigator.pushNamed(context, '/third');
+                  Navigator.pushNamed(context, '/before_1');
                 },
                 child: Card(
                   color: Colors.amberAccent,
@@ -50,7 +50,7 @@ class SecondFirst extends StatelessWidget {
               height: sizeh,
               child: InkWell(
                 onTap: () {
-                  Navigator.pushNamed(context, '/third');
+                  Navigator.pushNamed(context, '/before_2');
                 },
                 child: Card(
                   color: Colors.amberAccent,
@@ -70,7 +70,7 @@ class SecondFirst extends StatelessWidget {
               height: sizeh,
               child: InkWell(
                 onTap: () {
-                  Navigator.pushNamed(context, '/third');
+                  Navigator.pushNamed(context, '/before_3');
                 },
                 child: Card(
                   color: Colors.amberAccent,
@@ -90,53 +90,13 @@ class SecondFirst extends StatelessWidget {
               height: sizeh,
               child: InkWell(
                 onTap: () {
-                  Navigator.pushNamed(context, '/third');
+                  Navigator.pushNamed(context, '/before_4');
                 },
                 child: Card(
                   color: Colors.amberAccent,
                   child: Center(
                     child: Text(
                       AppLocalizations.of(context)!.second_four,
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontSize: sizefs,
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-            ),
-            Container(
-              height: sizeh,
-              child: InkWell(
-                onTap: () {
-                  Navigator.pushNamed(context, '/third');
-                },
-                child: Card(
-                  color: Colors.amberAccent,
-                  child: Center(
-                    child: Text(
-                      AppLocalizations.of(context)!.second_five,
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontSize: sizefs,
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-            ),
-            Container(
-              height: sizeh,
-              child: InkWell(
-                onTap: () {
-                  Navigator.pushNamed(context, '/third');
-                },
-                child: Card(
-                  color: Colors.amberAccent,
-                  child: Center(
-                    child: Text(
-                      AppLocalizations.of(context)!.second_six,
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontSize: sizefs,

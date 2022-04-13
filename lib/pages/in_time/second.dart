@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-// import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
-class ThirdFirst extends StatelessWidget {
-  const ThirdFirst({Key? key}) : super(key: key);
+class InTime2 extends StatelessWidget {
+  const InTime2({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     double sizeh = 200;
-    double sizefs = 25;
+    double sizefs = 18;
     return Scaffold(
       appBar: AppBar(
         title: Row(
@@ -25,15 +25,16 @@ class ThirdFirst extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Container(
-              height: sizeh,
+            Center(
               child: Card(
-                color: Colors.amberAccent,
-                child: Center(
+                color: Colors.amber[100],
+                child: Padding(
+                  padding: const EdgeInsets.all(18.0),
                   child: Text(
-                    'Video va matn materiallar',
-                    textAlign: TextAlign.center,
+                    AppLocalizations.of(context)!.intime1_2,
                     style: TextStyle(
                       fontSize: sizefs,
                     ),

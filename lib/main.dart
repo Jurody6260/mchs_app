@@ -2,9 +2,23 @@ import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:hive/hive.dart';
 import 'package:hive_flutter/hive_flutter.dart';
+import 'pages/2_after.dart';
+import 'pages/2_in_time.dart';
+import 'pages/before/first.dart';
+import 'pages/before/fourth.dart';
+import 'pages/before/second.dart';
+import 'pages/before/third.dart';
 import 'pages/first.dart';
+import 'pages/in_time/first.dart';
+import 'pages/in_time/fourth.dart';
+import 'pages/in_time/second.dart';
+import 'pages/in_time/third.dart';
+import 'pages/after/first.dart';
+import 'pages/after/second.dart';
+import 'pages/after/third.dart';
+import 'pages/after/fourth.dart';
 import 'pages/lang_select.dart';
-import 'pages/second.dart';
+import 'pages/2_before.dart';
 import 'pages/settings.dart';
 import 'pages/third_first.dart';
 
@@ -56,7 +70,21 @@ class _MyAppState extends State<MyApp> {
           initialRoute: '/',
           routes: {
             '/': (context) => FirstPage(),
-            '/second': (context) => SecondFirst(),
+            '/2_before': (context) => Before(),
+            '/before_1': (context) => Before1(),
+            '/before_2': (context) => Before2(),
+            '/before_3': (context) => Before3(),
+            '/before_4': (context) => Before4(),
+            '/2_in_time': (context) => InTime(),
+            '/in_time_1': (context) => InTime1(),
+            '/in_time_2': (context) => InTime2(),
+            '/in_time_3': (context) => InTime3(),
+            '/in_time_4': (context) => InTime4(),
+            '/2_after': (context) => After(),
+            '/after_1': (context) => After1(),
+            '/after_2': (context) => After2(),
+            '/after_3': (context) => After3(),
+            '/after_4': (context) => After4(),
             '/settings': (context) => Settings(),
             '/third': (context) => ThirdFirst(),
             '/LangSelect': (context) => LangSelect(),
@@ -72,7 +100,17 @@ class _MyAppState extends State<MyApp> {
           initialRoute: '/',
           routes: {
             '/': (context) => FirstPage(),
-            '/second': (context) => SecondFirst(),
+            '/2_before': (context) => Before(),
+            '/before_1': (context) => Before1(),
+            '/before_2': (context) => Before2(),
+            '/before_3': (context) => Before3(),
+            '/before_4': (context) => Before4(),
+            '/2_in_time': (context) => InTime(),
+            '/in_time_1': (context) => InTime1(),
+            '/in_time_2': (context) => InTime2(),
+            '/in_time_3': (context) => InTime3(),
+            '/in_time_4': (context) => InTime4(),
+            '/2_after': (context) => After(),
             '/settings': (context) => Settings(),
             '/third': (context) => ThirdFirst(),
             '/LangSelect': (context) => LangSelect(),

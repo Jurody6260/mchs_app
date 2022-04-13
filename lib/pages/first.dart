@@ -35,7 +35,7 @@ class FirstPage extends StatelessWidget {
                     children: [
                       InkWell(
                         onTap: () {
-                          Navigator.pushNamed(context, '/second');
+                          Navigator.pushNamed(context, '/2_before');
                         },
                         child: Column(
                           children: [
@@ -62,7 +62,7 @@ class FirstPage extends StatelessWidget {
                   color: Colors.amber,
                   child: InkWell(
                     onTap: () {
-                      Navigator.pushNamed(context, '/second');
+                      Navigator.pushNamed(context, '/2_in_time');
                     },
                     child: Column(
                       children: [
@@ -87,7 +87,7 @@ class FirstPage extends StatelessWidget {
                   color: Colors.amber,
                   child: InkWell(
                     onTap: () {
-                      Navigator.pushNamed(context, '/second');
+                      Navigator.pushNamed(context, '/2_after');
                     },
                     child: Column(
                       children: [
