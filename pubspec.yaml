@@ -58,6 +58,24 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/images/logo.jpg
+    - assets/images/after_5_2.png
+    - assets/images/after_5_3.png
+    - assets/images/after_5_4.png
+    - assets/images/after_5_5.png
+    - assets/images/after_5_6.png
+    - assets/images/after_5_7.png
+    - assets/images/after_5_8.png
+    - assets/images/after_5_9-1.png
+    - assets/images/after_5_9-2.png
+    - assets/images/after_5_10.png
+    - assets/images/after_5_11-1.png
+    - assets/images/after_5_11-2.png
+    - assets/images/after_5_12.png
+    - assets/images/after_5_13-1.png
+    - assets/images/after_5_13-2.png
+    - assets/images/intro.png
+    - assets/images/map_seys.png
+    - assets/images/table_after_5_1.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
@@ -84,3 +102,4 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+  
