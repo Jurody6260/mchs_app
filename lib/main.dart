@@ -4,6 +4,7 @@ import 'package:hive/hive.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'pages/2_after.dart';
 import 'pages/2_in_time.dart';
+import 'pages/after/five.dart';
 import 'pages/before/first.dart';
 import 'pages/before/fourth.dart';
 import 'pages/before/second.dart';
@@ -17,9 +18,12 @@ import 'pages/after/first.dart';
 import 'pages/after/second.dart';
 import 'pages/after/third.dart';
 import 'pages/after/fourth.dart';
+import 'pages/intro.dart';
 import 'pages/lang_select.dart';
 import 'pages/2_before.dart';
+import 'pages/map.dart';
 import 'pages/settings.dart';
+import 'pages/test.dart';
 import 'pages/third_first.dart';
 
 class MyApp extends StatefulWidget {
@@ -85,9 +89,13 @@ class _MyAppState extends State<MyApp> {
             '/after_2': (context) => After2(),
             '/after_3': (context) => After3(),
             '/after_4': (context) => After4(),
+            '/after_5': (context) => After5(),
+            '/2_map': (context) => MapSeys(),
+            '/2_test': (context) => Test(),
             '/settings': (context) => Settings(),
             '/third': (context) => ThirdFirst(),
             '/LangSelect': (context) => LangSelect(),
+            '/intro': (context) => Intro(),
           });
     } else {
       return MaterialApp(
@@ -111,9 +119,17 @@ class _MyAppState extends State<MyApp> {
             '/in_time_3': (context) => InTime3(),
             '/in_time_4': (context) => InTime4(),
             '/2_after': (context) => After(),
+            '/after_1': (context) => After1(),
+            '/after_2': (context) => After2(),
+            '/after_3': (context) => After3(),
+            '/after_4': (context) => After4(),
+            '/after_5': (context) => After5(),
+            '/2_map': (context) => MapSeys(),
+            '/2_test': (context) => Test(),
             '/settings': (context) => Settings(),
             '/third': (context) => ThirdFirst(),
             '/LangSelect': (context) => LangSelect(),
+            '/intro': (context) => Intro(),
           });
     }
   }
