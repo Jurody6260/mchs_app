@@ -23,7 +23,7 @@ import 'pages/lang_select.dart';
 import 'pages/2_before.dart';
 import 'pages/map.dart';
 import 'pages/settings.dart';
-import 'pages/test.dart';
+import 'package:final_mchs_/pages/test.dart';
 import 'pages/third_first.dart';
 
 class MyApp extends StatefulWidget {
