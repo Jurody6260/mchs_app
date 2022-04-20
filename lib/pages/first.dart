@@ -43,7 +43,6 @@ class FirstPage extends StatelessWidget {
                               padding: const EdgeInsets.all(40.0),
                               child: SizedBox(
                                 width: sizew,
-                                height: sizeh,
                                 child: Text(
                                   AppLocalizations.of(context)!.intro_title,
                                   textAlign: TextAlign.center,
@@ -74,7 +73,6 @@ class FirstPage extends StatelessWidget {
                               padding: const EdgeInsets.all(40.0),
                               child: SizedBox(
                                 width: sizew,
-                                height: sizeh,
                                 child: Text(
                                   AppLocalizations.of(context)!.first_first,
                                   textAlign: TextAlign.center,
@@ -101,7 +99,6 @@ class FirstPage extends StatelessWidget {
                           padding: const EdgeInsets.all(40.0),
                           child: SizedBox(
                             width: sizew,
-                            height: sizeh,
                             child: Text(
                               AppLocalizations.of(context)!.first_second,
                               textAlign: TextAlign.center,
@@ -126,7 +123,6 @@ class FirstPage extends StatelessWidget {
                           padding: const EdgeInsets.all(40.0),
                           child: SizedBox(
                             width: sizew,
-                            height: sizeh,
                             child: Text(
                               AppLocalizations.of(context)!.first_third,
                               textAlign: TextAlign.center,
@@ -151,7 +147,6 @@ class FirstPage extends StatelessWidget {
                           padding: const EdgeInsets.all(40.0),
                           child: SizedBox(
                             width: sizew,
-                            height: sizeh,
                             child: Text(
                               AppLocalizations.of(context)!.first_map,
                               textAlign: TextAlign.center,
@@ -176,7 +171,6 @@ class FirstPage extends StatelessWidget {
               //             padding: const EdgeInsets.all(40.0),
               //             child: SizedBox(
               //               width: sizew,
-              //               height: sizeh,
               //               child: Text(
               //                 AppLocalizations.of(context)!.first_test,
               //                 textAlign: TextAlign.center,
@@ -201,7 +195,6 @@ class FirstPage extends StatelessWidget {
                           padding: const EdgeInsets.all(40.0),
                           child: SizedBox(
                             width: sizew,
-                            height: sizeh,
                             child: Text(
                               AppLocalizations.of(context)!.settings,
                               textAlign: TextAlign.center,
