@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Before1 extends StatelessWidget {
   const Before1({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    double sizeh = 200;
     double sizefs = 18;
     return Scaffold(
       appBar: AppBar(
@@ -33,11 +33,28 @@ class Before1 extends StatelessWidget {
                 color: Colors.amber[100],
                 child: Padding(
                   padding: const EdgeInsets.all(18.0),
-                  child: Text(
-                    AppLocalizations.of(context)!.before1_1,
-                    style: TextStyle(
-                      fontSize: sizefs,
-                    ),
+                  child: Column(
+                    children: [
+                      Text(
+                        AppLocalizations.of(context)!.before1_1,
+                        style: TextStyle(
+                          fontSize: sizefs,
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Center(
+                          child: ElevatedButton(
+                            child: Text(
+                              AppLocalizations.of(context)!.before_url,
+                            ),
+                            onPressed: () {
+                              launch(AppLocalizations.of(context)!.before_url);
+                            },
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ),
@@ -48,3 +65,8 @@ class Before1 extends StatelessWidget {
     );
   }
 }
+
+// void _launchURL() async {
+//   String _url = AppLocalizations.of(context)!.before_url;
+//   if (!await launch(_url)) throw 'Could not launch $_url';
+// }
