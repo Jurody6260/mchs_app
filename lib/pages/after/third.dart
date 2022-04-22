@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class After3 extends StatelessWidget {
   const After3({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    double sizeh = 200;
     double sizefs = 18;
     return Scaffold(
       appBar: AppBar(
@@ -33,11 +33,28 @@ class After3 extends StatelessWidget {
                 color: Colors.amber[100],
                 child: Padding(
                   padding: const EdgeInsets.all(18.0),
-                  child: Text(
-                    AppLocalizations.of(context)!.after1_3,
-                    style: TextStyle(
-                      fontSize: sizefs,
-                    ),
+                  child: Column(
+                    children: [
+                      Text(
+                        AppLocalizations.of(context)!.after1_3,
+                        style: TextStyle(
+                          fontSize: sizefs,
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Center(
+                          child: ElevatedButton(
+                            child: Text(
+                              AppLocalizations.of(context)!.after_url_3,
+                            ),
+                            onPressed: () {
+                              launch(AppLocalizations.of(context)!.after_url_3);
+                            },
+                          ),
+                        ),
+                      )
+                    ],
                   ),
                 ),
               ),
