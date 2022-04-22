@@ -1,6 +1,6 @@
+import 'package:final_mchs_app/pages/test/practise.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:hive/hive.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'pages/2_after.dart';
 import 'pages/2_in_time.dart';
@@ -23,7 +23,6 @@ import 'pages/lang_select.dart';
 import 'pages/2_before.dart';
 import 'pages/map.dart';
 import 'pages/settings.dart';
-import 'package:final_mchs_/pages/test.dart';
 import 'pages/third_first.dart';
 
 class MyApp extends StatefulWidget {
@@ -91,7 +90,7 @@ class _MyAppState extends State<MyApp> {
             '/after_4': (context) => After4(),
             '/after_5': (context) => After5(),
             '/2_map': (context) => MapSeys(),
-            '/2_test': (context) => Test(),
+            '/2_test': (context) => TestPrac(),
             '/settings': (context) => Settings(),
             '/third': (context) => ThirdFirst(),
             '/LangSelect': (context) => LangSelect(),
@@ -125,7 +124,7 @@ class _MyAppState extends State<MyApp> {
             '/after_4': (context) => After4(),
             '/after_5': (context) => After5(),
             '/2_map': (context) => MapSeys(),
-            '/2_test': (context) => Test(),
+            '/2_test': (context) => TestPrac(),
             '/settings': (context) => Settings(),
             '/third': (context) => ThirdFirst(),
             '/LangSelect': (context) => LangSelect(),
