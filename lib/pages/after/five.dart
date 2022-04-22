@@ -6,7 +6,6 @@ class After5 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double sizeh = 200;
     double sizefs = 18;
     return Scaffold(
       appBar: AppBar(
