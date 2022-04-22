@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:final_mchs_/provider.dart';
+import 'package:final_mchs_app/provider.dart';
 
 import '../main.dart';
 
@@ -86,7 +86,7 @@ class LangSelect extends StatelessWidget {
                             // box.put('local', 'ru');
                             // box.close();
                             MyApp.of(context)!.setLocale(
-                                Locale.fromSubtags(languageCode: 'ru'),'ru');
+                                Locale.fromSubtags(languageCode: 'ru'), 'ru');
                             Navigator.pop(context);
                             Navigator.pop(context);
                           },
@@ -121,7 +121,7 @@ class LangSelect extends StatelessWidget {
                       ElevatedButton(
                           onPressed: () {
                             MyApp.of(context)!.setLocale(
-                                Locale.fromSubtags(languageCode: 'en'),'en');
+                                Locale.fromSubtags(languageCode: 'en'), 'en');
                             Navigator.pop(context);
                             Navigator.pop(context);
                             // final provider = Provider.of<LocaleProvider>(

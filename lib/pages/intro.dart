@@ -6,7 +6,6 @@ class Intro extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double sizeh = 200;
     double sizefs = 25;
     return Scaffold(
       appBar: AppBar(
