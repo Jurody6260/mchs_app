@@ -7,7 +7,6 @@ class FirstPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double sizew = 500;
-    double sizeh = 80;
     return Scaffold(
       appBar: AppBar(
         title: Row(
@@ -159,30 +158,30 @@ class FirstPage extends StatelessWidget {
                       ],
                     ),
                   )),
-              // Card(
-              //     color: Colors.amber,
-              //     child: InkWell(
-              //       onTap: () {
-              //         Navigator.pushNamed(context, '/2_test');
-              //       },
-              //       child: Column(
-              //         children: [
-              //           Padding(
-              //             padding: const EdgeInsets.all(40.0),
-              //             child: SizedBox(
-              //               width: sizew,
-              //               child: Text(
-              //                 AppLocalizations.of(context)!.first_test,
-              //                 textAlign: TextAlign.center,
-              //                 style: TextStyle(
-              //                   fontSize: 25,
-              //                 ),
-              //               ),
-              //             ),
-              //           ),
-              //         ],
-              //       ),
-              //     )),
+              Card(
+                  color: Colors.amber,
+                  child: InkWell(
+                    onTap: () {
+                      Navigator.pushNamed(context, '/2_test');
+                    },
+                    child: Column(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.all(40.0),
+                          child: SizedBox(
+                            width: sizew,
+                            child: Text(
+                              AppLocalizations.of(context)!.first_test,
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                fontSize: 25,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  )),
               Card(
                   color: Colors.amber[700],
                   child: InkWell(
