@@ -6,7 +6,7 @@ class Before extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double sizeh = 200;
+    double sizeh = 250;
     double sizefs = 25;
     return Scaffold(
       appBar: AppBar(
