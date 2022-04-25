@@ -22,6 +22,7 @@ import 'pages/intro.dart';
 import 'pages/lang_select.dart';
 import 'pages/2_before.dart';
 import 'pages/map.dart';
+import 'pages/region_select.dart';
 import 'pages/settings.dart';
 import 'pages/third_first.dart';
 
@@ -94,6 +95,7 @@ class _MyAppState extends State<MyApp> {
             '/settings': (context) => Settings(),
             '/third': (context) => ThirdFirst(),
             '/LangSelect': (context) => LangSelect(),
+            '/ChooseRegion': (context) => ChooseRegion(),
             '/intro': (context) => Intro(),
           });
     } else {
@@ -128,6 +130,7 @@ class _MyAppState extends State<MyApp> {
             '/settings': (context) => Settings(),
             '/third': (context) => ThirdFirst(),
             '/LangSelect': (context) => LangSelect(),
+            '/ChooseRegion': (context) => ChooseRegion(),
             '/intro': (context) => Intro(),
           });
     }

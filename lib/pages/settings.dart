@@ -36,29 +36,65 @@ class Settings extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
                       ElevatedButton(
-                          onPressed: () {
-                            Navigator.pushNamed(context, '/LangSelect');
-                          },
-                          child: Column(
-                            children: [
-                              SizedBox(
-                                height: boxheight,
+                        onPressed: () {
+                          Navigator.pushNamed(context, '/LangSelect');
+                        },
+                        child: Column(
+                          children: [
+                            SizedBox(
+                              height: boxheight,
+                            ),
+                            Text(
+                              AppLocalizations.of(context)!.choose_Lan,
+                              style: TextStyle(
+                                fontSize: 25,
                               ),
-                              Text(
-                                AppLocalizations.of(context)!.choose_Lan,
-                                style: TextStyle(
-                                  fontSize: 25,
-                                ),
-                              ),
-                              SizedBox(
-                                height: boxheight,
-                              )
-                            ],
-                          ))
+                            ),
+                            SizedBox(
+                              height: boxheight,
+                            )
+                          ],
+                        ),
+                      ),
                     ],
                   ),
                 ),
-              )
+              ),
+              Card(
+                color: Colors.amber,
+                child: InkWell(
+                  onTap: () {
+                    Navigator.pushNamed(context, '/LangSelect');
+                  },
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      ElevatedButton(
+                        onPressed: () {
+                          Navigator.pushNamed(context, '/ChooseRegion');
+                        },
+                        child: Column(
+                          children: [
+                            SizedBox(
+                              height: boxheight,
+                            ),
+                            Text(
+                              AppLocalizations.of(context)!.choose_region,
+                              style: TextStyle(
+                                fontSize: 25,
+                              ),
+                            ),
+                            SizedBox(
+                              height: boxheight,
+                            )
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
             ],
           ),
         ));
