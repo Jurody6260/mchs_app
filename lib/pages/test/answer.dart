@@ -4,12 +4,12 @@ class Answer extends StatefulWidget {
   final String answerText;
   final Color answerColor;
   final Function answerTap;
-  const Answer(
-      {required this.answerText,
-      Key? key,
-      required this.answerColor,
-      required this.answerTap})
-      : super(key: key);
+  const Answer({
+    required this.answerText,
+    Key? key,
+    required this.answerColor,
+    required this.answerTap,
+  }) : super(key: key);
 
   @override
   State<Answer> createState() => _AnswerState();
