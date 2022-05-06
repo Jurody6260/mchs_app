@@ -78,6 +78,7 @@ flutter:
     - assets/images/map_seys.png
     - assets/images/table_after_5_1.png
     - assets/images/prapushiniy.jpg
+    - assets/gif/glb.gif
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

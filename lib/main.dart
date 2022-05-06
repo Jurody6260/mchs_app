@@ -2,6 +2,7 @@ import 'package:final_mchs_app/pages/test/practise.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:hive_flutter/hive_flutter.dart';
+import 'intro_glb.dart';
 import 'pages/2_after.dart';
 import 'pages/2_in_time.dart';
 import 'pages/after/five.dart';
@@ -71,8 +72,9 @@ class _MyAppState extends State<MyApp> {
           supportedLocales: AppLocalizations.supportedLocales,
           onGenerateTitle: (context) =>
               AppLocalizations.of(context)!.applicationTitle,
-          initialRoute: '/',
+          initialRoute: '/intro_glb',
           routes: {
+            '/intro_glb': (context) => IntroGlobus(),
             '/': (context) => FirstPage(),
             '/2_before': (context) => Before(),
             '/before_1': (context) => Before1(),
@@ -106,8 +108,9 @@ class _MyAppState extends State<MyApp> {
           supportedLocales: AppLocalizations.supportedLocales,
           onGenerateTitle: (context) =>
               AppLocalizations.of(context)!.applicationTitle,
-          initialRoute: '/',
+          initialRoute: '/intro_glb',
           routes: {
+            '/intro_glb': (context) => IntroGlobus(),
             '/': (context) => FirstPage(),
             '/2_before': (context) => Before(),
             '/before_1': (context) => Before1(),
