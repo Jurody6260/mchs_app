@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class MapSeys extends StatelessWidget {
   const MapSeys({Key? key}) : super(key: key);
@@ -16,8 +17,7 @@ class MapSeys extends StatelessWidget {
               backgroundImage: AssetImage("assets/images/logo.jpg"),
             ),
             Container(
-                padding: const EdgeInsets.all(8.0),
-                child: Text('ZILZILA MOBILE'))
+                padding: const EdgeInsets.all(8.0), child: Text('Zilzila APP'))
           ],
         ),
         centerTitle: true,
@@ -44,6 +44,17 @@ class MapSeys extends StatelessWidget {
                         AppLocalizations.of(context)!.map_info,
                         style: TextStyle(
                           fontSize: sizefs,
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Center(
+                          child: ElevatedButton(
+                            child: Text('http://smrm.uz/'),
+                            onPressed: () {
+                              launch('http://smrm.uz/');
+                            },
+                          ),
                         ),
                       ),
                     ],
