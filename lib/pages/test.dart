@@ -21,7 +21,7 @@
 //             ),
 //             Container(
 //                 padding: const EdgeInsets.all(8.0),
-//                 child: Text('ZILZILA MOBILE'))
+//                 child: Text('Zilzila APP'))
 //           ],
 //         ),
 //         centerTitle: true,

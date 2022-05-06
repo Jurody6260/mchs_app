@@ -17,8 +17,7 @@ class After3 extends StatelessWidget {
               backgroundImage: AssetImage("assets/images/logo.jpg"),
             ),
             Container(
-                padding: const EdgeInsets.all(8.0),
-                child: Text('ZILZILA MOBILE'))
+                padding: const EdgeInsets.all(8.0), child: Text('Zilzila APP'))
           ],
         ),
         centerTitle: true,

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-
 class Before2 extends StatelessWidget {
   const Before2({Key? key}) : super(key: key);
 
@@ -18,8 +17,7 @@ class Before2 extends StatelessWidget {
               backgroundImage: AssetImage("assets/images/logo.jpg"),
             ),
             Container(
-                padding: const EdgeInsets.all(8.0),
-                child: Text('ZILZILA MOBILE'))
+                padding: const EdgeInsets.all(8.0), child: Text('Zilzila APP'))
           ],
         ),
         centerTitle: true,
@@ -50,7 +48,8 @@ class Before2 extends StatelessWidget {
                               AppLocalizations.of(context)!.before_url_2,
                             ),
                             onPressed: () {
-                              launch(AppLocalizations.of(context)!.before_url_2);
+                              launch(
+                                  AppLocalizations.of(context)!.before_url_2);
                             },
                           ),
                         ),

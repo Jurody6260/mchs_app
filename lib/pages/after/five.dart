@@ -16,8 +16,7 @@ class After5 extends StatelessWidget {
               backgroundImage: AssetImage("assets/images/logo.jpg"),
             ),
             Container(
-                padding: const EdgeInsets.all(8.0),
-                child: Text('ZILZILA MOBILE'))
+                padding: const EdgeInsets.all(8.0), child: Text('Zilzila APP'))
           ],
         ),
         centerTitle: true,
@@ -78,7 +77,7 @@ class After5 extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(top: 8.0),
                       child: Image(
-                        image: AssetImage("assets/images/after_5_4.png"),
+                        image: AssetImage("assets/images/prapushiniy.jpg"),
                       ),
                     ),
                     Text(
@@ -90,7 +89,7 @@ class After5 extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(top: 8.0),
                       child: Image(
-                        image: AssetImage("assets/images/after_5_5.png"),
+                        image: AssetImage("assets/images/after_5_4.png"),
                       ),
                     ),
                     Text(
@@ -102,7 +101,7 @@ class After5 extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(top: 8.0),
                       child: Image(
-                        image: AssetImage("assets/images/after_5_6.png"),
+                        image: AssetImage("assets/images/after_5_5.png"),
                       ),
                     ),
                     Text(
@@ -114,7 +113,7 @@ class After5 extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(top: 8.0),
                       child: Image(
-                        image: AssetImage("assets/images/after_5_7.png"),
+                        image: AssetImage("assets/images/after_5_6.png"),
                       ),
                     ),
                     Text(
@@ -126,11 +125,23 @@ class After5 extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(top: 8.0),
                       child: Image(
-                        image: AssetImage("assets/images/after_5_8.png"),
+                        image: AssetImage("assets/images/after_5_7.png"),
                       ),
                     ),
                     Text(
                       AppLocalizations.of(context)!.after1_5_9,
+                      style: TextStyle(
+                        fontSize: sizefs,
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 8.0),
+                      child: Image(
+                        image: AssetImage("assets/images/after_5_8.png"),
+                      ),
+                    ),
+                    Text(
+                      AppLocalizations.of(context)!.after1_5_10,
                       style: TextStyle(
                         fontSize: sizefs,
                       ),
@@ -148,12 +159,6 @@ class After5 extends StatelessWidget {
                             image: AssetImage("assets/images/after_5_9-2.png"),
                           ),
                         ],
-                      ),
-                    ),
-                    Text(
-                      AppLocalizations.of(context)!.after1_5_10,
-                      style: TextStyle(
-                        fontSize: sizefs,
                       ),
                     ),
                     Text(

@@ -17,8 +17,7 @@ class InTime1 extends StatelessWidget {
               backgroundImage: AssetImage("assets/images/logo.jpg"),
             ),
             Container(
-                padding: const EdgeInsets.all(8.0),
-                child: Text('ZILZILA MOBILE'))
+                padding: const EdgeInsets.all(8.0), child: Text('Zilzila APP'))
           ],
         ),
         centerTitle: true,
@@ -49,7 +48,8 @@ class InTime1 extends StatelessWidget {
                               AppLocalizations.of(context)!.inTime_url_1,
                             ),
                             onPressed: () {
-                              launch(AppLocalizations.of(context)!.inTime_url_1);
+                              launch(
+                                  AppLocalizations.of(context)!.inTime_url_1);
                             },
                           ),
                         ),
