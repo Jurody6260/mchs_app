@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../../funcs/mybar.dart';
+
 class InTime1 extends StatelessWidget {
   const InTime1({Key? key}) : super(key: key);
 
@@ -9,19 +11,7 @@ class InTime1 extends StatelessWidget {
   Widget build(BuildContext context) {
     double sizefs = 18;
     return Scaffold(
-      appBar: AppBar(
-        title: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            CircleAvatar(
-              backgroundImage: AssetImage("assets/images/logo.jpg"),
-            ),
-            Container(
-                padding: const EdgeInsets.all(8.0), child: Text('Zilzila APP'))
-          ],
-        ),
-        centerTitle: true,
-      ),
+      appBar: myBar(),
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,

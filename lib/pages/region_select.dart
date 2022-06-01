@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../funcs/mybar.dart';
+
 class ChooseRegion extends StatelessWidget {
   const ChooseRegion({Key? key}) : super(key: key);
 
@@ -7,20 +9,7 @@ class ChooseRegion extends StatelessWidget {
   Widget build(BuildContext context) {
     double boxheight = 50;
     return Scaffold(
-        appBar: AppBar(
-          title: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              CircleAvatar(
-                backgroundImage: AssetImage("assets/images/logo.jpg"),
-              ),
-              Container(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Text('Zilzila APP'))
-            ],
-          ),
-          centerTitle: true,
-        ),
+        appBar: myBar(),
         body: SingleChildScrollView(
           child: Column(
             children: [

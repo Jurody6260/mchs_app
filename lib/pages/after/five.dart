@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
+import '../../funcs/mybar.dart';
+
 class After5 extends StatelessWidget {
   const After5({Key? key}) : super(key: key);
 
@@ -8,19 +10,7 @@ class After5 extends StatelessWidget {
   Widget build(BuildContext context) {
     double sizefs = 18;
     return Scaffold(
-      appBar: AppBar(
-        title: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            CircleAvatar(
-              backgroundImage: AssetImage("assets/images/logo.jpg"),
-            ),
-            Container(
-                padding: const EdgeInsets.all(8.0), child: Text('Zilzila APP'))
-          ],
-        ),
-        centerTitle: true,
-      ),
+      appBar: myBar(),
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,

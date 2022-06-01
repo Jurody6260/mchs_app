@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../funcs/mybar.dart';
 import 'answer.dart';
 
 class TestPrac extends StatefulWidget {
@@ -67,19 +68,7 @@ class _TestPracState extends State<TestPrac> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            CircleAvatar(
-              backgroundImage: AssetImage("assets/images/logo.jpg"),
-            ),
-            Container(
-                padding: const EdgeInsets.all(8.0), child: Text('Zilzila APP'))
-          ],
-        ),
-        centerTitle: true,
-      ),
+      appBar: myBar(),
       body: SingleChildScrollView(
         child: Center(
           child: Padding(
