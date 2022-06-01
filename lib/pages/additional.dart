@@ -3,8 +3,8 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 import '../funcs/mybar.dart';
 
-class FirstPage extends StatelessWidget {
-  const FirstPage({Key? key}) : super(key: key);
+class Additional extends StatelessWidget {
+  const Additional({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -45,41 +45,12 @@ class FirstPage extends StatelessWidget {
                       ),
                     ],
                   )),
-              Card(
-                  color: Colors.amber,
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      InkWell(
-                        onTap: () {
-                          Navigator.pushNamed(context, '/2_before');
-                        },
-                        child: Column(
-                          children: [
-                            Padding(
-                              padding: const EdgeInsets.all(40.0),
-                              child: SizedBox(
-                                width: sizew,
-                                child: Text(
-                                  AppLocalizations.of(context)!.first_first,
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                    fontSize: 25,
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  )),
+              
               Card(
                   color: Colors.amber,
                   child: InkWell(
                     onTap: () {
-                      Navigator.pushNamed(context, '/2_in_time');
+                      Navigator.pushNamed(context, '/2_map');
                     },
                     child: Column(
                       children: [
@@ -88,7 +59,7 @@ class FirstPage extends StatelessWidget {
                           child: SizedBox(
                             width: sizew,
                             child: Text(
-                              AppLocalizations.of(context)!.first_second,
+                              AppLocalizations.of(context)!.first_map,
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                 fontSize: 25,
@@ -103,7 +74,7 @@ class FirstPage extends StatelessWidget {
                   color: Colors.amber,
                   child: InkWell(
                     onTap: () {
-                      Navigator.pushNamed(context, '/2_after');
+                      Navigator.pushNamed(context, '/2_test');
                     },
                     child: Column(
                       children: [
@@ -112,7 +83,7 @@ class FirstPage extends StatelessWidget {
                           child: SizedBox(
                             width: sizew,
                             child: Text(
-                              AppLocalizations.of(context)!.first_third,
+                              AppLocalizations.of(context)!.first_test,
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                 fontSize: 25,
@@ -124,31 +95,29 @@ class FirstPage extends StatelessWidget {
                     ),
                   )),
               Card(
-                color: Colors.amber,
-                child: InkWell(
-                  onTap: () {
-                    Navigator.pushNamed(context, '/additional_for_first_page');
-                  },
-                  child: Column(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.all(40.0),
-                        child: SizedBox(
-                          width: sizew,
-                          child: Text(
-                            AppLocalizations.of(context)!
-                                .additional_for_first_page,
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                              fontSize: 25,
+                  color: Colors.amber[700],
+                  child: InkWell(
+                    onTap: () {
+                      Navigator.pushNamed(context, '/additional_four');
+                    },
+                    child: Column(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.all(40.0),
+                          child: SizedBox(
+                            width: sizew,
+                            child: Text(
+                              AppLocalizations.of(context)!.additional_four,
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                fontSize: 25,
+                              ),
                             ),
                           ),
                         ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
+                      ],
+                    ),
+                  )),
             ],
           ),
         ),
