@@ -1,3 +1,4 @@
+import 'package:final_mchs_app/additional_four.dart';
 import 'package:final_mchs_app/pages/test/practise.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
@@ -5,6 +6,7 @@ import 'package:hive_flutter/hive_flutter.dart';
 import 'intro_glb.dart';
 import 'pages/2_after.dart';
 import 'pages/2_in_time.dart';
+import 'pages/additional.dart';
 import 'pages/after/five.dart';
 import 'pages/before/first.dart';
 import 'pages/before/fourth.dart';
@@ -76,6 +78,8 @@ class _MyAppState extends State<MyApp> {
           routes: {
             '/intro_glb': (context) => IntroGlobus(),
             '/': (context) => FirstPage(),
+            '/additional_for_first_page': (context) => Additional(),
+            '/additional_four': (context) => AdditionaFour(),
             '/2_before': (context) => Before(),
             '/before_1': (context) => Before1(),
             '/before_2': (context) => Before2(),
@@ -112,6 +116,8 @@ class _MyAppState extends State<MyApp> {
           routes: {
             '/intro_glb': (context) => IntroGlobus(),
             '/': (context) => FirstPage(),
+            '/additional_for_first_page': (context) => Additional(),
+            '/additional_four': (context) => AdditionaFour(),
             '/2_before': (context) => Before(),
             '/before_1': (context) => Before1(),
             '/before_2': (context) => Before2(),
