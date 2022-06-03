@@ -23,36 +23,6 @@ class FirstPage extends StatelessWidget {
                     children: [
                       InkWell(
                         onTap: () {
-                          Navigator.pushNamed(context, '/intro');
-                        },
-                        child: Column(
-                          children: [
-                            Padding(
-                              padding: const EdgeInsets.all(40.0),
-                              child: SizedBox(
-                                width: sizew,
-                                child: Text(
-                                  AppLocalizations.of(context)!.intro_title,
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                    fontSize: 25,
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  )),
-              Card(
-                  color: Colors.amber,
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      InkWell(
-                        onTap: () {
                           Navigator.pushNamed(context, '/2_before');
                         },
                         child: Column(
