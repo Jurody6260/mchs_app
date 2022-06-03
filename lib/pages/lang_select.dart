@@ -11,7 +11,6 @@ class LangSelect extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double boxheight = 50;
     return Scaffold(
         appBar: myBar(),
         body: Center(
