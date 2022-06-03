@@ -45,7 +45,6 @@ class Additional extends StatelessWidget {
                       ),
                     ],
                   )),
-              
               Card(
                   color: Colors.amber,
                   child: InkWell(
@@ -95,7 +94,7 @@ class Additional extends StatelessWidget {
                     ),
                   )),
               Card(
-                  color: Colors.amber[700],
+                  color: Colors.amber,
                   child: InkWell(
                     onTap: () {
                       Navigator.pushNamed(context, '/additional_four');
