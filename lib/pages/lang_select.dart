@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:final_mchs_app/provider.dart';
-import 'package:final_mchs_app/pages/first.dart';
-
 import '../funcs/mybar.dart';
 import '../main.dart';
 
