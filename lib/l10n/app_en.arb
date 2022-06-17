@@ -2,15 +2,15 @@
   "@@locale": "en",
 
   "helloWorld": "Hello World!",
-  "@helloWorld": {
-    "description": "The conventional newborn programmer greeting"
-  },
   "applicationTitle" : "Zilzila APP",
   "settings" : "Settings",
   "choose_Lan" : "Choose Language",
   "first_first":"Actions before earthquake",
   "first_second":"Actions at the time earthquake",
   "first_third":"Actions after earthquake",
+  "additional_for_first_page":"ADDITIONAL INFORMATION",
+  "first_map":"Republic of Uzbekistan's map",
+  "first_test":"TESTS TO ASSESS THE LEVEL OF PREPARATION OF CITIZENS FOR EARTHQUAKES",
   "second_one":"Production and service population engaged in industries",
   "second_two":"Production and service population not engaged in industries",
   "second_three":"Preschool general secondary special professional and higher education students in institutions",
@@ -43,5 +43,11 @@
   "after_url_1":"",
   "after_url_2":"",
   "after_url_3":"",
-  "after_url_4":""
+  "after_url_4":"",
+  "choose_region":"Choose region",
+  "test_didnt_answer":"Test did not answer",
+  "test_correct_answer":"Correct",
+  "test_incorrect_answer":"Incorrect",
+  "test_next_answer":"Next",
+  "test_submit":"Submit"
 }

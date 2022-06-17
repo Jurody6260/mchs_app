@@ -27,6 +27,8 @@ import 'pages/2_before.dart';
 import 'pages/map.dart';
 import 'pages/region_select.dart';
 import 'pages/settings.dart';
+import 'pages/test/practise_en.dart';
+import 'pages/test/practise_ru.dart';
 import 'pages/third_first.dart';
 
 class MyApp extends StatefulWidget {
@@ -98,6 +100,8 @@ class _MyAppState extends State<MyApp> {
             '/after_5': (context) => After5(),
             '/2_map': (context) => MapSeys(),
             '/2_test': (context) => TestPrac(),
+            '/2_test_en': (context) => TestPracEn(),
+            '/2_test_ru': (context) => TestPracRu(),
             '/settings': (context) => Settings(),
             '/third': (context) => ThirdFirst(),
             '/LangSelect': (context) => LangSelect(),
@@ -136,6 +140,8 @@ class _MyAppState extends State<MyApp> {
             '/after_5': (context) => After5(),
             '/2_map': (context) => MapSeys(),
             '/2_test': (context) => TestPrac(),
+            '/2_test_en': (context) => TestPracEn(),
+            '/2_test_ru': (context) => TestPracRu(),
             '/settings': (context) => Settings(),
             '/third': (context) => ThirdFirst(),
             '/LangSelect': (context) => LangSelect(),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 import '../../funcs/mybar.dart';
 import 'answer.dart';
@@ -67,6 +68,7 @@ class _TestPracState extends State<TestPrac> {
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       appBar: myBar(),
       body: SingleChildScrollView(
@@ -146,13 +148,13 @@ class _TestPracState extends State<TestPrac> {
                     onPressed: () {
                       if (!answerWasSelected) {
                         ScaffoldMessenger.of(context).showSnackBar(
-                            SnackBar(content: Text('Iltimos javobni tanlang')));
+                            SnackBar(content: Text(AppLocalizations.of(context)!.test_didnt_answer)));
                         return;
                       }
                       nextQuestion();
                     },
                     child: Text(
-                      endOfTest ? "Yuborish" : "Keyingisi",
+                      endOfTest ? AppLocalizations.of(context)!.test_submit : AppLocalizations.of(context)!.test_next_answer,
                     ),
                   ),
                   Container(
@@ -171,8 +173,8 @@ class _TestPracState extends State<TestPrac> {
                       child: Center(
                         child: Text(
                           correctAnswerSelected
-                              ? "Javob to'g'ri"
-                              : "Javob noto'g'ri",
+                              ? AppLocalizations.of(context)!.test_correct_answer
+                              : AppLocalizations.of(context)!.test_incorrect_answer,
                           style: TextStyle(
                               fontSize: 20,
                               fontWeight: FontWeight.bold,
@@ -189,6 +191,7 @@ class _TestPracState extends State<TestPrac> {
     );
   }
 }
+
 
 final List _questions = const [
   {

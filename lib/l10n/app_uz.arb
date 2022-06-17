@@ -1,5 +1,6 @@
 {
   "@@locale": "uz",
+  
   "helloWorld": "Salom!",
   "applicationTitle" : "MCHS ilovasi",
   "settings" : "Foydalanuvchi sozlanmalari",
@@ -61,5 +62,10 @@
   "after_url_3":"https://youtu.be/nO2vAnovDoI",
   "after_url_4":"https://youtu.be/5KShnsV6Uy4",
   "intro_url":"https://youtu.be/xX5i-mwyQ54",
-  "choose_region":"Xududni tanlash"
+  "choose_region":"Xududni tanlash",
+  "test_didnt_answer":"Iltimos javobni tanlang",
+  "test_correct_answer":"Javob to'g'ri",
+  "test_incorrect_answer":"Javob noto'g'ri",
+  "test_next_answer":"Keyingisi",
+  "test_submit":"Yuborish"
 }
