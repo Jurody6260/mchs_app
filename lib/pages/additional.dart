@@ -73,6 +73,11 @@ class Additional extends StatelessWidget {
                   color: Colors.amber,
                   child: InkWell(
                     onTap: () {
+                      if (Localizations.localeOf(context) == Locale('ru')) {
+                        Navigator.pushNamed(context, '/2_test_ru');
+                      } else if (Localizations.localeOf(context) == Locale('en')) {
+                        Navigator.pushNamed(context, '/2_test_en');
+                      } else
                       Navigator.pushNamed(context, '/2_test');
                     },
                     child: Column(
