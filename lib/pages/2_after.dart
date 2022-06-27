@@ -94,26 +94,6 @@ class After extends StatelessWidget {
                 ),
               ),
             ),
-            Container(
-              height: sizeh,
-              child: InkWell(
-                onTap: () {
-                  Navigator.pushNamed(context, '/after_5');
-                },
-                child: Card(
-                  color: Colors.amberAccent,
-                  child: Center(
-                    child: Text(
-                      AppLocalizations.of(context)!.second_five,
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontSize: sizefs,
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-            ),
           ],
         ),
       ),

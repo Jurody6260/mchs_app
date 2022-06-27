@@ -17,36 +17,6 @@ class Additional extends StatelessWidget {
             children: [
               Card(
                   color: Colors.amber,
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      InkWell(
-                        onTap: () {
-                          Navigator.pushNamed(context, '/intro');
-                        },
-                        child: Column(
-                          children: [
-                            Padding(
-                              padding: const EdgeInsets.all(40.0),
-                              child: SizedBox(
-                                width: sizew,
-                                child: Text(
-                                  AppLocalizations.of(context)!.intro_title,
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                    fontSize: 25,
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  )),
-              Card(
-                  color: Colors.amber,
                   child: InkWell(
                     onTap: () {
                       Navigator.pushNamed(context, '/2_map');
@@ -59,6 +29,84 @@ class Additional extends StatelessWidget {
                             width: sizew,
                             child: Text(
                               AppLocalizations.of(context)!.first_map,
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                fontSize: 25,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  )),
+                  Card(
+                  color: Colors.amber,
+                  child: InkWell(
+                    onTap: () {
+                      Navigator.pushNamed(context, '/additional_four');
+                    },
+                    child: Column(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.all(40.0),
+                          child: SizedBox(
+                            width: sizew,
+                            child: Text(
+                              AppLocalizations.of(context)!.additional_four,
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                fontSize: 25,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  )),
+                Card(
+                color: Colors.amber,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    InkWell(
+                      onTap: () {
+                        Navigator.pushNamed(context, '/intro');
+                      },
+                      child: Column(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.all(40.0),
+                            child: SizedBox(
+                              width: sizew,
+                              child: Text(
+                                AppLocalizations.of(context)!.intro_title,
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  fontSize: 25,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                )),
+              Card(
+                  color: Colors.amber,
+                  child: InkWell(
+                    onTap: () {
+                      Navigator.pushNamed(context, '/after_5');
+                    },
+                    child: Column(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.all(40.0),
+                          child: SizedBox(
+                            width: sizew,
+                            child: Text(
+                              AppLocalizations.of(context)!.second_five,
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                 fontSize: 25,
@@ -98,30 +146,7 @@ class Additional extends StatelessWidget {
                       ],
                     ),
                   )),
-              Card(
-                  color: Colors.amber,
-                  child: InkWell(
-                    onTap: () {
-                      Navigator.pushNamed(context, '/additional_four');
-                    },
-                    child: Column(
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.all(40.0),
-                          child: SizedBox(
-                            width: sizew,
-                            child: Text(
-                              AppLocalizations.of(context)!.additional_four,
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                fontSize: 25,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  )),
+              
             ],
           ),
         ),
