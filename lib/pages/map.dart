@@ -31,6 +31,14 @@ class MapSeys extends StatelessWidget {
                         ),
                       ),
                       Text(
+                        AppLocalizations.of(context)!.map_title,
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: sizefs,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      Text(
                         AppLocalizations.of(context)!.map_info,
                         style: TextStyle(
                           fontSize: sizefs,

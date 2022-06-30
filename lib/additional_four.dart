@@ -23,6 +23,14 @@ class AdditionaFour extends StatelessWidget {
                   child: Column(
                     children: [
                       Text(
+                        AppLocalizations.of(context)!.additional_four,
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: sizefs,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      Text(
                         AppLocalizations.of(context)!.additional_four_1,
                         style: TextStyle(
                           fontSize: sizefs,

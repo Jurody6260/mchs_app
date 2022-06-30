@@ -31,6 +31,14 @@ class Intro extends StatelessWidget {
                         ),
                       ),
                       Text(
+                        AppLocalizations.of(context)!.intro_title,
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: sizefs,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      Text(
                         AppLocalizations.of(context)!.intro,
                         style: TextStyle(
                           fontSize: sizefs,
