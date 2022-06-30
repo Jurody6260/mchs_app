@@ -9,6 +9,12 @@ class MapSeys extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var path = "assets/images/map_seys.png";
+    if (Localizations.localeOf(context) == Locale('uz')) {
+      path = "assets/images/map_seys_uz.png";
+    } else if (Localizations.localeOf(context) == Locale('en')) {
+      path = "assets/images/map_seys_en.png";
+    }
     double sizefs = 18;
     return Scaffold(
       appBar: myBar(),
@@ -27,7 +33,7 @@ class MapSeys extends StatelessWidget {
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Image(
-                          image: AssetImage("assets/images/map_seys.png"),
+                          image: AssetImage(path),
                         ),
                       ),
                       Text(
