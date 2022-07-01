@@ -23,6 +23,14 @@ class After5 extends StatelessWidget {
                   padding: const EdgeInsets.all(18.0),
                   child: Column(children: [
                     Text(
+                      AppLocalizations.of(context)!.second_five,
+                      style: TextStyle(
+                        fontSize: sizefs,
+                        fontWeight: FontWeight.bold,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                    Text(
                       AppLocalizations.of(context)!.after1_5,
                       style: TextStyle(
                         fontSize: sizefs,

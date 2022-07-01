@@ -583,16 +583,6 @@ final List _questions = const [
   },
   {
     'question':
-        'Yer yuzasi tebranishlarini yozish uchun mo\'ljallangan qurilma qanday nomlanadi?',
-    'answers': [
-      {'answerText': 'Etnograf', 'score': false},
-      {'answerText': 'Seysmograf', 'score': true},
-      {'answerText': 'Xronograf', 'score': false},
-      {'answerText': 'Sotsiograf', 'score': false},
-    ],
-  },
-  {
-    'question':
         'Nima deb o\'ylaysiz zilzila yuz berganda birinchi silkinishlardan so\'ng qayta silkinishlar bo\'lishi mumkinmi?',
     'answers': [
       {'answerText': 'Ha.', 'score': true},
