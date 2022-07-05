@@ -68,7 +68,6 @@ class _TestPracState extends State<TestPrac> {
 
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       appBar: myBar(),
       body: SingleChildScrollView(
@@ -147,14 +146,17 @@ class _TestPracState extends State<TestPrac> {
                         minimumSize: Size(double.infinity, 40)),
                     onPressed: () {
                       if (!answerWasSelected) {
-                        ScaffoldMessenger.of(context).showSnackBar(
-                            SnackBar(content: Text(AppLocalizations.of(context)!.test_didnt_answer)));
+                        ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                            content: Text(AppLocalizations.of(context)!
+                                .test_didnt_answer)));
                         return;
                       }
                       nextQuestion();
                     },
                     child: Text(
-                      endOfTest ? AppLocalizations.of(context)!.test_submit : AppLocalizations.of(context)!.test_next_answer,
+                      endOfTest
+                          ? AppLocalizations.of(context)!.test_submit
+                          : AppLocalizations.of(context)!.test_next_answer,
                     ),
                   ),
                   Container(
@@ -173,8 +175,10 @@ class _TestPracState extends State<TestPrac> {
                       child: Center(
                         child: Text(
                           correctAnswerSelected
-                              ? AppLocalizations.of(context)!.test_correct_answer
-                              : AppLocalizations.of(context)!.test_incorrect_answer,
+                              ? AppLocalizations.of(context)!
+                                  .test_correct_answer
+                              : AppLocalizations.of(context)!
+                                  .test_incorrect_answer,
                           style: TextStyle(
                               fontSize: 20,
                               fontWeight: FontWeight.bold,
@@ -191,7 +195,6 @@ class _TestPracState extends State<TestPrac> {
     );
   }
 }
-
 
 final List _questions = const [
   {
@@ -228,16 +231,6 @@ final List _questions = const [
       {'answerText': 'Sotsiologiya', 'score': false},
       {'answerText': 'Ekologiya', 'score': false},
       {'answerText': 'Seysmologiya', 'score': true},
-    ],
-  },
-  {
-    'question':
-        'Yer yuzasi tebranishlarini yozish uchun mo\'ljallangan qurilma qanday nomlanadi?',
-    'answers': [
-      {'answerText': 'Etnograf', 'score': false},
-      {'answerText': 'Seysmograf', 'score': true},
-      {'answerText': 'Xronograf', 'score': false},
-      {'answerText': 'Sotsiograf', 'score': false},
     ],
   },
   {
@@ -386,7 +379,7 @@ final List _questions = const [
       {'answerText': 'Yer osti zarbasi yuzaga kelgan joy.', 'score': false},
       {
         'answerText':
-            'Namgarchilik tufayli og\'irlik kuchi ta’sirida tog\' jinslarining yonbag\'ir bo\'ylab pastga tomon siljishi.',
+            'Namgarchilik tufayli og\'irlik kuchi ta\'sirida tog\' jinslarining yonbag\'ir bo\'ylab pastga tomon siljishi.',
         'score': false
       },
       {'answerText': 'To\'g\'ri javob B.', 'score': false},
@@ -413,7 +406,7 @@ final List _questions = const [
     ],
   },
   {
-    'question': 'Sirena xabar berish signali nima ma’noni anglatadi?',
+    'question': 'Sirena xabar berish signali nima ma\'noni anglatadi?',
     'answers': [
       {'answerText': '“Diqqat barchaga!”', 'score': true},
       {'answerText': '“Suv toshqini!”', 'score': false},
@@ -448,7 +441,7 @@ final List _questions = const [
       },
       {
         'answerText':
-            'Hayvon va inson organizmida turli noxush omillar (stressorlar) ta’siriga javoban yuzaga keluvchi fiziologik himoya reaksiyalari majmui',
+            'Hayvon va inson organizmida turli noxush omillar (stressorlar) ta\'siriga javoban yuzaga keluvchi fiziologik himoya reaksiyalari majmui',
         'score': true
       },
       {'answerText': 'Xavf-xatarni sezish, xavfsirash holati.', 'score': false},
@@ -497,7 +490,7 @@ final List _questions = const [
             'Tabiiy ofat to\'g\'risida o\'z vaqtida ishonchli va haqqoniy axborot berish',
         'score': true
       },
-      {'answerText': 'Maxsus kiyim-kechak bilan ta’minlash', 'score': false},
+      {'answerText': 'Maxsus kiyim-kechak bilan ta\'minlash', 'score': false},
       {'answerText': 'Qutqaruv asbob-anjomlari sotib olish.', 'score': false},
       {
         'answerText': 'Tabiiy ofatdan muhofaza qilib bo\'lmaydi.',
@@ -509,7 +502,7 @@ final List _questions = const [
     'question': 'Zilzila sabablaridan birini ko\'rsating:',
     'answers': [
       {
-        'answerText': 'Yer qobig\'i plitalarining o\'zaro ta’sirlashuvi.',
+        'answerText': 'Yer qobig\'i plitalarining o\'zaro ta\'sirlashuvi.',
         'score': true
       },
       {
