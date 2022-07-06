@@ -211,19 +211,6 @@ final List _questions = const [
     ],
   },
   {
-    'question': 'Zilzila nima?',
-    'answers': [
-      {
-        'answerText':
-            'Yer ichki harakatlari natijasida uning yuzasida paydo bo\'ladigan tebranma harakat',
-        'score': true
-      },
-      {'answerText': 'Yer osti zarbasi yuzaga kelgan joy', 'score': false},
-      {'answerText': 'Qayta-qayta takrorlanuvchi tebranishlar', 'score': false},
-      {'answerText': 'Tabiat hodisasi', 'score': false},
-    ],
-  },
-  {
     'question':
         'Yer qobig\'ining tebranishlarini o\'rganadigan fan qanday nomlanadi?',
     'answers': [
