@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.final_mchs_">
+    package="com.final_mchs_">
    <application
         android:label="Zilzila APP"
         android:icon="@mipmap/ic_launcher">

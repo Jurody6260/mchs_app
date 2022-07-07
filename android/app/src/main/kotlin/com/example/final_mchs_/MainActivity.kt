@@ -1,4 +1,4 @@
-package com.example.final_mchs_
+package com.final_mchs_
 
 import io.flutter.embedding.android.FlutterActivity
 
