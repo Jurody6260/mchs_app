@@ -16,3 +16,6 @@ For help getting started with Flutter, view our
 samples, guidance on mobile development, and a full API reference.
 
 flutter build apk --split-per-abi
+
+
+flutter build appbundle --build-name=2.2.2 --build-number=2
